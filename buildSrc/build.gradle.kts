@@ -1,22 +1,7 @@
-apply {
-    plugin("kotlin")
+plugins {
+    `kotlin-dsl`
 }
 
-buildscript {
-    repositories {
-        gradlePluginPortal()
-    }
-
-    dependencies{
-        classpath(kotlin("gradle-plugin", "1.4.10"))
-    }
-}
-
-repositories{
+repositories {
     gradlePluginPortal()
-}
-
-dependencies{
-    implementation(gradleKotlinDsl())
-    implementation(kotlin("stdlib", "1.4.10"))
 }

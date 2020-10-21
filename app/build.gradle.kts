@@ -2,19 +2,24 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("android.extensions")
+    kotlin("kapt")
 }
 
 android {
+    buildFeatures {
+        dataBinding = true
+    }
+
     // 版本配置
-    compileSdkVersion(AppGradleConfig.compileSdkVersion)
-    buildToolsVersion(AppGradleConfig.buildToolsVersion)
+    compileSdkVersion(Versions.COMPILE_SDK)
+    buildToolsVersion(Versions.BUILD_TOOL)
 
     defaultConfig {
-        applicationId = AppGradleConfig.applicationId
-        minSdkVersion(AppGradleConfig.minSdkVersion)
-        targetSdkVersion(AppGradleConfig.targetSdkVersion)
-        versionCode = AppGradleConfig.versionCode
-        versionName = AppGradleConfig.versionName
+        applicationId = Versions.APPLICATION_ID
+        minSdkVersion(Versions.MIN_SDK)
+        targetSdkVersion(Versions.TARGET_SDK)
+        versionCode = Versions.versionCode
+        versionName = Versions.versionName
     }
 
     // 签名类型
@@ -71,9 +76,22 @@ android {
 }
 
 dependencies {
-    implementation(AppDependenciesConfig.kotlin_stdlib)
-    implementation(AppDependenciesConfig.core_ktx)
-    implementation(AppDependenciesConfig.appcompat)
-    implementation(AppDependenciesConfig.material)
-    implementation(AppDependenciesConfig.constraintlayout)
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    // Kotlin
+    implementation(Libs.KOTLIN_STDLIB)
+    implementation(Libs.CORE_KTX)
+    // AppCompat
+    implementation(Libs.APPCOMPAT)
+    // Material Design
+    implementation(Libs.MATERAL)
+    // CircleImageView
+    implementation(Libs.CIRCLEIMAGEVIEW)
+    // ConstraintLayout
+    implementation(Libs.CONSTRAINTLAYOUT)
+    // Navigation
+    implementation(Libs.NAVIGATION_FRAGMENT_KTX)
+    implementation(Libs.NAVIGATION_UI_KTX)
+    // LiveData
+    implementation(Libs.LIFECYCLE_LIVEDATA_KTX)
+    implementation(Libs.LIFECYCLE_VIEWMODEL_KTX)
 }
