@@ -3,13 +3,10 @@ plugins {
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
+    id("kotlin-android")
 }
 
 android {
-    buildFeatures {
-        dataBinding = true
-    }
-
     // 版本配置
     compileSdkVersion(Versions.COMPILE_SDK)
     buildToolsVersion(Versions.BUILD_TOOL)
@@ -82,10 +79,12 @@ dependencies {
     implementation(Libs.CORE_KTX)
     // AppCompat
     implementation(Libs.APPCOMPAT)
+    // legacy
+    implementation(Libs.LEGAVY_SUPPORT_V4)
     // Material Design
     implementation(Libs.MATERAL)
-    // CircleImageView
-    implementation(Libs.CIRCLEIMAGEVIEW)
+    // SwipeRefreshLayout
+    implementation(Libs.SWIPEREFRESHLAYOUT)
     // ConstraintLayout
     implementation(Libs.CONSTRAINTLAYOUT)
     // Navigation

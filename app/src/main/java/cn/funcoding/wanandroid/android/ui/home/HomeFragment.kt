@@ -21,10 +21,10 @@ class HomeFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         fragmentList = listOf(
-            PlazaFragment.newInstance("", ""),
-            ProjectFragment.newInstance("", ""),
-            SystemFragment.newInstance("", ""),
-            WxFragment.newInstance("", "")
+            PlazaFragment.newInstance(),
+            ProjectFragment.newInstance(),
+            SystemFragment.newInstance(),
+            WxFragment.newInstance()
         )
 
         titles = listOf(

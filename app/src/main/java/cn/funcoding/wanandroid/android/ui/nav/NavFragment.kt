@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import cn.funcoding.wanandroid.android.R
 
+/**
+ * 导航界面
+ */
 class NavFragment : Fragment() {
 
     companion object {

@@ -23,6 +23,14 @@
         <activity
             android:name=".ui.WebActivity"
             android:theme="@style/Theme.WanAndroid.NoActionBar" />
+
+        <activity
+            android:name=".ui.mine.MineActivity"
+            android:theme="@style/Theme.WanAndroid.NoActionBar" />
+
+        <activity
+            android:name=".ui.SearchActivity"
+            android:theme="@style/Theme.WanAndroid.NoActionBar" />
     </application>
 
 </manifest>

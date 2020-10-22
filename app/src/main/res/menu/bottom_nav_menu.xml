@@ -3,19 +3,19 @@
     <item
         android:id="@+id/homeFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_home_24"
         android:title="@string/label_home" />
 
     <item
         android:id="@+id/questionFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_question_answer_24dp"
+        android:icon="@drawable/ic_question_answer_24"
         android:title="@string/label_question" />
 
     <item
         android:id="@+id/navFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_navigation_black_24dp"
+        android:icon="@drawable/ic_navigation_24"
         android:title="@string/label_nav" />
 
 </menu>

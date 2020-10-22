@@ -8,11 +8,14 @@ object Libs {
     // Android标准库
     const val APPCOMPAT = "androidx.appcompat:appcompat:1.2.0"
 
+    // legacy
+    const val LEGAVY_SUPPORT_V4 = "androidx.legacy:legacy-support-v4:1.0.0"
+
     // Material Design
     const val MATERAL = "com.google.android.material:material:1.2.1"
 
-    // CircleImageView
-    const val CIRCLEIMAGEVIEW = "de.hdodenhof:circleimageview:3.1.0"
+    // SwipeRefreshLayout
+    const val SWIPEREFRESHLAYOUT = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
     // 约束布局
     const val CONSTRAINTLAYOUT = "androidx.constraintlayout:constraintlayout:2.0.2"

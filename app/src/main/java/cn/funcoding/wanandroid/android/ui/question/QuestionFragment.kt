@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import cn.funcoding.wanandroid.android.R
 
+/**
+ * 问答界面
+ */
 class QuestionFragment : Fragment() {
 
     companion object {
