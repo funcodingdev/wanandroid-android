@@ -1,4 +1,4 @@
-package cn.funcoding.wanandroid.android.ui
+package cn.funcoding.wanandroid.android.ui.web
 
 import cn.funcoding.wanandroid.android.R
 import cn.funcoding.wanandroid.android.base.BaseActivity

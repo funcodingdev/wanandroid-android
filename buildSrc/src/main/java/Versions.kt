@@ -8,6 +8,8 @@ object Versions {
     // 导航组件版本
     const val NAVIGATION = "2.3.0"
 
+    const val RETROFIT = "2.9.0"
+
     // 依赖版本
     const val COMPILE_SDK = 30
 

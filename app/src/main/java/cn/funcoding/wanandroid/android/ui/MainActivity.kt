@@ -6,7 +6,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import cn.funcoding.wanandroid.android.R
 import cn.funcoding.wanandroid.android.base.BaseActivity
-import cn.funcoding.wanandroid.android.ui.mine.MineActivity
+import cn.funcoding.wanandroid.android.ui.search.SearchActivity
+import cn.funcoding.wanandroid.android.ui.user.UserActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -45,7 +46,8 @@ class MainActivity : BaseActivity() {
     }
 
     private fun showMinePage() {
-        MineActivity.show(this)
+//        MineActivity.show(this)
+        UserActivity.show(this)
     }
 
     private fun showSearchPage() {

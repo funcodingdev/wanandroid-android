@@ -1,9 +1,10 @@
-package cn.funcoding.wanandroid.android.ui
+package cn.funcoding.wanandroid.android.ui.search
 
 import android.content.Context
 import android.content.Intent
 import cn.funcoding.wanandroid.android.R
 import cn.funcoding.wanandroid.android.base.BaseActivity
+import kotlinx.android.synthetic.main.activity_search.*
 
 class SearchActivity : BaseActivity() {
 
@@ -17,5 +18,11 @@ class SearchActivity : BaseActivity() {
     override fun getLayResId(): Int = R.layout.activity_search
 
     override fun initView() {
+        setSupportActionBar(toolbar)
+        toolbar.setNavigationOnClickListener {
+            finish()
+        }
     }
+
+
 }

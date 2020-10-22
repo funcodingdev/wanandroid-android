@@ -29,4 +29,9 @@ object Libs {
     // Jetpack LiveData
     const val LIFECYCLE_LIVEDATA_KTX = "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
     const val LIFECYCLE_VIEWMODEL_KTX = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+
+    // Retrofit
+    const val RETROFIT = "com.squareup.retrofit2:retrofit:${Versions.RETROFIT}"
+    const val RETROFIT_CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:${Versions.RETROFIT}"
+    const val OKHTTP3_LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:4.7.2"
 }

@@ -3,7 +3,6 @@ plugins {
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
-    id("kotlin-android")
 }
 
 android {
@@ -70,6 +69,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        // 数据绑定
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -93,4 +97,8 @@ dependencies {
     // LiveData
     implementation(Libs.LIFECYCLE_LIVEDATA_KTX)
     implementation(Libs.LIFECYCLE_VIEWMODEL_KTX)
+    // Retrofit
+    implementation(Libs.RETROFIT)
+    implementation(Libs.RETROFIT_CONVERTER_GSON)
+    implementation(Libs.OKHTTP3_LOGGING_INTERCEPTOR)
 }
