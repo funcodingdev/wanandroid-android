@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WanAndroid">
         <activity
-            android:name=".ui.WanActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/Theme.WanAndroid.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

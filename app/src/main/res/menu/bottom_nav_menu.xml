@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_home"
+        android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/label_home" />
 
     <item
-        android:id="@+id/menu_question"
+        android:id="@+id/questionFragment"
         android:enabled="true"
-        android:title="@string/title_question" />
+        android:title="@string/label_question" />
 
     <item
-        android:id="@+id/menu_nav"
+        android:id="@+id/navFragment"
         android:enabled="true"
         android:icon="@drawable/ic_navigation_black_24dp"
-        android:title="@string/title_nav" />
+        android:title="@string/label_nav" />
 
 </menu>

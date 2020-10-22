@@ -1,13 +1,12 @@
 package cn.funcoding.wanandroid.android.ui
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import cn.funcoding.wanandroid.android.R
+import cn.funcoding.wanandroid.android.base.BaseActivity
 
-class WebActivity : AppCompatActivity() {
+class WebActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_web)
+    override fun getLayResId(): Int = R.layout.activity_web
+
+    override fun initView() {
     }
 }
