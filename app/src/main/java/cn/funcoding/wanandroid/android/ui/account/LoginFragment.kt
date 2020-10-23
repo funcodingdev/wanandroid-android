@@ -1,4 +1,4 @@
-package cn.funcoding.wanandroid.android.ui.user
+package cn.funcoding.wanandroid.android.ui.account
 
 import cn.funcoding.wanandroid.android.R
 import cn.funcoding.wanandroid.android.base.BaseFragment

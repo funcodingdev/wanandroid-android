@@ -1,4 +1,4 @@
-package cn.funcoding.wanandroid.android.ui.user
+package cn.funcoding.wanandroid.android.ui.account
 
 import android.content.Context
 import android.content.Intent
@@ -6,22 +6,22 @@ import android.view.Menu
 import android.view.MenuItem
 import cn.funcoding.wanandroid.android.R
 import cn.funcoding.wanandroid.android.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_user.*
+import kotlinx.android.synthetic.main.activity_account.*
 
 /**
  * 登陆注册界面
  */
-class UserActivity : BaseActivity() {
+class AccountActivity : BaseActivity() {
     private lateinit var loginFragment: LoginFragment
     private lateinit var registerFragment: RegisterFragment
 
     companion object {
         fun show(context: Context) {
-            context.startActivity(Intent(context, UserActivity::class.java))
+            context.startActivity(Intent(context, AccountActivity::class.java))
         }
     }
 
-    override fun getLayResId(): Int = R.layout.activity_user
+    override fun getLayResId(): Int = R.layout.activity_account
 
     override fun initView() {
         setSupportActionBar(toolbar)
@@ -36,7 +36,7 @@ class UserActivity : BaseActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.user_menu, menu)
+        menuInflater.inflate(R.menu.account_menu, menu)
         return true
     }
 
